@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav {
+    background-color: #8ac4c9;
+    border-bottom: 2px solid grey;
+    padding: 15px 50px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav .logo {
+    width: 100px;
+    height: 100px;
+}
+
+.main-nav .main-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-nav .main-menu li {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.main-nav .main-menu a {
+    font-size: x-large;
+    color : black;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+.main-nav .main-menu a:hover {
+    color: #3388af;
+}
+
+body {
+    height: 100vh;
+    background-color:beige;
+}
+
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-input,
+.todo-btn {
+    padding: 0.5rem 1rem;
+    margin: 20px;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+}
+
+.todo-input {
+    width: 50%;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 50%;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.todo {
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.todo .task {
+    flex: 14;
+}
+
+.done-btn,
+.delete-btn {
+    margin: 0 10px;
+    flex: 1;
+    border: none;
+    cursor: pointer;
+    height: 2.5rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: white;
+}
+
+.done-btn {
+    background-color: darkgreen;
+}
+
+.delete-btn {
+    background-color: darkred;
+}
+
+.done-task {
+    text-decoration: line-through;
+}

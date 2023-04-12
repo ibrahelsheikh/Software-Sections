@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome todo list</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav class="main-nav">
+            <img src="./images/logo.png" alt="Logo" class="logo">
+            <ul class="main-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+    </nav>
+
+    <section>
+        <form>
+            <input type="text" class="todo-input" placeholder="What are you planning to do ..?">
+            <input type="submit" class="todo-btn" name="Add-btn" value="Add">
+        </form>
+
+        <div class="todo-container">
+            <ul class="todo-list">
+                <li class="todo"> 
+                    <p class="task">Go to gym</p>
+                    <button class="done-btn"> ✓ </button>
+                    <button class="delete-btn"> X </button>
+                </li>
+
+                <li class="todo"> 
+                    <p class="task">Do the assignment</p>
+                    <button class="done-btn"> ✓ </button>
+                    <button class="delete-btn"> X </button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
