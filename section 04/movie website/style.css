@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #d65108;
+    --white: #fff;
+}
+
+body{
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.header img{
+    width: 100px;
+}
+
+.header .title{
+    padding-left: 1rem;
+    font-size: 3rem;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center; 
+}
+
+.search-box{
+    margin: 1.2rem 0;
+    width: 90%;
+    display: flex;
+    align-items: stretch;
+}
+
+.search-content{
+    flex: 14;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+
+
+.search-btn{
+    flex: 1;
+    cursor: pointer;
+    font-size: 1.8rem;
+    height: 55px;
+
+    background-color: var(--main-color);
+    color: var(--white);
+    border: none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: background-color 0.5s linear;
+}
+
+.search-btn:hover{
+    background-color: black;
+}
+
+.movies-results{
+    margin-top: 4rem;
+}
+
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2.4rem 0;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.movie-item{
+    margin: 2rem;
+    width: 300px;
+    border-radius: 2rem;
+
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+}
+
+.movie-item img{
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    width: 100%;
+}
+
+.movie-item .movie-title{
+    padding: 1.5rem 0.5rem;
+}
+
+.movie-title h3{
+    font-size: 1.4rem;
+}
+
+.details-btn{
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.1rem;
+
+    display: block;
+    padding: 0.75rem;
+    margin: 1rem auto;
+    width: 175px;
+    border-radius: 2rem;
+}
+
+@media (max-width: 700px) {
+    .header{
+        flex-direction: column;
+    }
+}
