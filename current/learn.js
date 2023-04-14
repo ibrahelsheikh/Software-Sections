@@ -71,7 +71,16 @@ const person1 = new Person('John', 'Doe');
 console.log(person1.getFullName()); // Output: John Doe
 
 // DOM
-let myelement =document.getElementById("my-div");
-let myelement =document.getElementsByTagName("p");
+let elementById = document.getElementById("my-div");
+let elementsByTagName = document.getElementsByTagName("h");
+let myClassElement = document.getElementsByClassName("my-span");
+let myQuerySelector =document.querySelector("h1");
 
-console.log(myelement)
+console.log(elementById);
+console.log(elementsByTagName);
+console.log(myClassElement);
+console.log(myQuerySelector);
+
+
+
+
