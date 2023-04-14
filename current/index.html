@@ -20,8 +20,24 @@
 <footer>
     <p>&copy; 2023 John Doe</p>
 </footer>
+<script src="learn.js"></script>
+<script>
+    let myIdElement = document.getElementById("my-div");
+    let myTagElements = document.getElementsByTagName("p");
+    let myClassElement = document.getElementsByClassName("my-span");
+    let myQueryElement = document.querySelector(".my-span");
+    let myQueryAllElement = document.querySelectorAll(".my-span");
 
-<script src="learn.js">
+    console.log(myIdElement);
+    console.log(myTagElements[1]);
+    console.log(myClassElement[1]);
+    console.log(myQueryElement);
+    console.log(myQueryAllElement[1]);
+
+    console.log(document.title);
+    console.log(document.body);
+    console.log(document.forms[0].one.value);
+    console.log(document.links[1].href);
 </script>
 </body>
 </html>

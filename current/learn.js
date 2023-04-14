@@ -70,17 +70,38 @@ class Person {
 const person1 = new Person('John', 'Doe');
 console.log(person1.getFullName()); // Output: John Doe
 
-// DOM
-let elementById = document.getElementById("my-div");
-let elementsByTagName = document.getElementsByTagName("h");
+/*
+  DOM
+  - What Is DOM
+  - DOM Selectors
+  --- Find Element By ID
+  --- Find Element By Tag Name
+  --- Find Element By Class Name
+  --- Find Element By CSS Selectors
+  --- Find Element By Collection
+  ------ title
+  ------ body
+  ------ images
+  ------ forms
+  ------ links
+*/
+
+let myIdElement = document.getElementById("my-div");
+let myTagElements = document.getElementsByTagName("p");
 let myClassElement = document.getElementsByClassName("my-span");
-let myQuerySelector =document.querySelector("h1");
+let myQueryElement = document.querySelector(".my-span");
+let myQueryAllElement = document.querySelectorAll(".my-span");
 
-console.log(elementById);
-console.log(elementsByTagName);
-console.log(myClassElement);
-console.log(myQuerySelector);
+console.log(myIdElement);
+console.log(myTagElements[1]);
+console.log(myClassElement[1]);
+console.log(myQueryElement);
+console.log(myQueryAllElement[1]);
 
+console.log(document.title);
+console.log(document.body);
+console.log(document.forms[0].one.value);
+console.log(document.links[1].href);
 
 
 
